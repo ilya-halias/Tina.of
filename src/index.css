@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-.paragraph{
+
+
+
+* {
+    color: azure;
+    margin: 0 ;
+    cursor: pointer;
+    text-decoration: none;
+    font-family:   'Source Code Pro', monospace,'Caveat', cursive, 'Dancing Script', cursive;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+
+}
+li::before {
+    content: '\25ba'; /* Добавляем маркер в шестнадцатеричном формате*/
+    padding-right: 5px; /* Расстояние от маркеров до текста */
     color: red;
+}
+image{
+    pointer-events: none;
+}
+
+
+.footer{
+
+    margin: 25px;
+    text-align: center;
+    font-size: 15px;
 }
