@@ -20,9 +20,17 @@ export const MainPage = () => {
         </h2>
       </div>
       <div className={"flex justify-around m-16"}>
-        <img className="max-w-sm" src={TattooMachine} />
-        <img className="max-w-sm" src={TattooMachineInTheHands} />
-        <img className="max-w-sm" src={TattooMachineHand} />
+        <img className="max-w-sm" src={TattooMachine} alt={"tattooMashine"} />
+        <img
+          className="max-w-sm"
+          src={TattooMachineInTheHands}
+          alt={"tattooMashine"}
+        />
+        <img
+          className="max-w-sm"
+          src={TattooMachineHand}
+          alt={"tattooMashine"}
+        />
       </div>
 
       <h3 className="text-6xl text-center p-16"> {dataText.describes.title}</h3>
