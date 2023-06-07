@@ -5,44 +5,69 @@ import TattooMachineInTheHands from "../../../assets/img/tattoo_machine4.jpeg";
 import TattooMachineHand from "../../../assets/img/tattoo_machine2.jpeg";
 import Tina from "../../../assets/img/tina.jpeg";
 import { List } from "../../molecules/list/List";
-import TinaINSuit from "../../../assets/img/tina_in_suit .jpeg";
 import React from "react";
 
 export const MainPage = () => {
+  window.scrollTo(0, 0);
   return (
     <div className="bg-dark-100">
       <div className={"content-center flex-col "}>
-        <img className="fill-white-100 mx-auto my-20 " src={Logo} alt="Logo" />
-        <p className="text-right pr-40 text-3xl"> by Valentina Zayats</p>
+        <div>
+          <img
+            className="fill-white-100 mx-auto mt-20 mb-4 p-4 md:mb-10"
+            src={Logo}
+            alt="Logo"
+          />
+        </div>
+        <p className="text-right pr-4 text-base md:text-right 2xl::pr-40 md:text-2xl">
+          by Valentina Zayats
+        </p>
 
-        <h2 className="text-5xl text-center p-8 font-extralight">
+        <h1 className="text-2xl p-4 sm:text-4xl md:text-6xl text-center md:p-16">
           {dataText.smallHeader}
-        </h2>
+        </h1>
       </div>
-      <div className={"flex justify-around m-16"}>
-        <img className="max-w-sm" src={TattooMachine} alt={"tattooMashine"} />
-        <img
-          className="max-w-sm"
-          src={TattooMachineInTheHands}
-          alt={"tattooMashine"}
-        />
-        <img
-          className="max-w-sm"
-          src={TattooMachineHand}
-          alt={"tattooMashine"}
-        />
+      <div>
+        <div
+          className={
+            "flex flex-col px-4   lg:flex-row md:gap-2 lg:justify-between lg:m-0 2xl:px-52 md:m-12"
+          }
+        >
+          <div className={"sm:self-center"}>
+            <img
+              className=" my-4 sl:max-w-sm object-cover sm:max-w-xl lg:max-w-xs 2xl:max-w-md"
+              src={TattooMachine}
+              alt={"tattooMashine"}
+            />
+          </div>
+          <div className={"sm:self-center"}>
+            <img
+              className="my-4 sl:max-w-sm object-cover sm:max-w-xl lg:max-w-xs 2xl:max-w-md "
+              src={TattooMachineInTheHands}
+              alt={"tattooMashine"}
+            />
+          </div>
+          <div className={"sm:self-center"}>
+            <img
+              className=" my-4 sl:max-w-sm object-cover sm:max-w-xl lg:max-w-xs 2xl:max-w-md"
+              src={TattooMachineHand}
+              alt={"tattooMashine"}
+            />
+          </div>
+        </div>
       </div>
 
-      <h3 className="text-6xl text-center p-16"> {dataText.describes.title}</h3>
-
-      <div className="flex justify-around">
-        <img className={"max-h-100 max-w-xl"} src={Tina} alt="Tina" />
+      <div className="flex flex-col mt-3 px-4   lg:flex-row lg:justify-around  lg:mt-20 ">
+        <div className={"sm:self-center"}>
+          <img
+            className={
+              "my-4   object-cover sl:max-w-sm sm:max-w-xl lg:max-h-100 md:max-w-xl lg:max-w-xs 2xl:max-w-xl md:max-h-160"
+            }
+            src={Tina}
+            alt="Tina"
+          />
+        </div>
         <List />
-        <img
-          className={"max-h-100 max-w-xl"}
-          src={TinaINSuit}
-          alt="TinaINSuit"
-        />
       </div>
     </div>
   );
